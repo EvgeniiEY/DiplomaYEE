@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_line"
+    android:layout_marginTop="@dimen/margin_column"
+    android:layout_marginEnd="@dimen/margin_line"
+    android:gravity="center_horizontal"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
+
+    <TableRow
+        android:id="@+id/tableRowStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            style="@style/TableRow"
+            android:text="@string/from" />
+
+        <EditText
+            android:id="@+id/start_edit"
+            android:layout_width="@dimen/column_width"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:longClickable="false"
+            tools:ignore="LabelFor,TextFields" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            style="@style/TableRow"
+            android:text="@string/to" />
+
+        <EditText
+            android:id="@+id/finish_edit"
+            android:layout_width="@dimen/column_width"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:longClickable="false"
+            tools:ignore="LabelFor,TextFields" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            style="@style/TableRow"
+            android:text="@string/company" />
+
+        <EditText
+            android:id="@+id/company_edit"
+            android:layout_width="@dimen/column_width"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            style="@style/TableRow"
+            android:text="@string/website" />
+
+        <EditText
+            android:id="@+id/link_edit"
+            android:layout_width="@dimen/column_width"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="textUri"
+            tools:ignore="LabelFor" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            style="@style/TableRow"
+            android:text="@string/position" />
+
+        <EditText
+            android:id="@+id/position_edit"
+            android:layout_width="@dimen/column_width"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"/>
+    </TableRow>
+
+</TableLayout>
